@@ -1,0 +1,504 @@
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Panthera;
+    src: url(assets/fonts/Panthera.ttf);
+}
+
+@font-face {
+    font-family: Beyno;
+    src: url(assets/fonts/BEYNO.ttf);
+}
+
+@font-face {
+    font-family: Cantarell;
+    src: url(assets/fonts/Cantarell-Regular.ttf);
+}
+
+@font-face {
+    font-family: Wakanda forever;
+    src: url(assets/fonts/WakandaForever-Regular.ttf);
+}
+
+body {
+    background: url(./assets/Illustration-Logo/arrière_plan.png) center/cover;
+    min-height: 100vh;
+    color: white;
+    background-color: black;
+}
+
+.container{
+    margin: 0 auto;
+    width: 80%;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    padding: 30px 0;
+}
+
+
+.header-nav{
+    text-transform: uppercase;
+    font-family: BEYNO;
+    src: url(./fonts/BEYNO.ttf);
+    font-size: 15px;
+    
+}
+
+header .header-logo{
+    transition: transform .5s;
+}
+.header-nav a{
+    margin: 28px;
+}
+
+a:hover{
+    color:#FFF;
+}
+
+.header-logo a:hover{
+    color: #3D2DA6;
+}
+
+.sect {
+    position: relative;
+    background: none;
+    margin: 0 auto;
+    width: 90%;
+    padding: 10px;
+    height: 500px;
+}
+
+.scroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+     top: 150px;
+     right: 620px;
+ }
+ 
+ .scroll img{
+     margin-top: 15px;
+ }
+
+.scroll img:hover{
+    transform: scale(1.1) rotate(10deg);
+}
+
+h1 {
+    font-family: Panthera;
+    src: url(assets/fonts/Panthera.ttf);
+    font-size: 68px;
+    color: #9E91B7;
+}
+
+h2 {
+    font-family: Beyno;
+    src: url(assets/fonts/BEYNO.ttf);
+    font-size: 32px;
+    margin-top: 10px;
+    color: #9E91B7;
+}
+
+.paragraphe{
+    margin-left: 50px;
+}
+
+p {
+    font-family: Cantarell;
+    src: url(assets/fonts/Cantarell-Regular.ttf);
+    font-size: 11px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 544px;
+    text-align: justify;
+}
+
+.lien, .footer-li, .h-footer li {
+    font-family: Cantarell;
+    src: url(assets/fonts/Cantarell-Regular.ttf);
+    font-size: 0.75rem;
+    color: white;
+}
+
+.texte {
+    position: absolute;
+    top: 60px;
+    left: 50px;
+    padding-left: 30px;
+}
+
+
+.image {
+    position: absolute;
+    left: 590px;
+    top: 60px;
+}
+
+.image-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #021740;  
+    height: 250px;  
+    margin-left: 35px;
+}
+
+#slider{
+   position: relative;
+   display: contents;
+   align-items: center;
+}
+
+#precedent , #suivant{
+    position: absolute;
+    font-size: 30px;
+    cursor: pointer;
+   
+}
+
+#precedent{
+    left:0px;
+    
+}
+#suivant{
+    right: 0;
+}
+
+.Pantherhome2{
+    position: relative;
+    left: 20px;
+}
+
+.image-bar p{
+    width: 250px;
+    margin: 0 auto;
+}
+
+#slider1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.grid{
+    display:grid ;
+    grid-template-columns: 50% 50%;
+    column-count: 2;
+    margin: 0 auto;
+    width: 90%;
+    padding-top: 60px;
+}
+
+
+.pt5{
+    position: absolute;
+    right: 150px;
+    top: 950px;
+
+}
+
+.pt6{
+    position: relative;
+    top: -400px;
+    left: 800px;
+}
+
+.photo{
+    position: relative;
+    top: 120px;
+    left:90px ;
+    
+}
+
+.legend{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px 20px 40px;
+    font-size: 10px;
+    font-family: Cantarell;
+    src: url(assets/fonts/Cantarell-Regular.ttf);
+}
+
+legend{
+    border: 1px solid blueviolet;
+    padding: 5px 7px;
+    background-color: #3D2DA6;
+    border-radius: 4px;
+    color: #fff;
+}
+
+span{
+    font-weight: bold;
+}
+
+.legend2 ul li p{
+   font-size: 10px;
+    padding-top: 5px;
+    font-size: 11px;
+    color:#021740;
+    margin: 0 auto;
+    width: 80%;
+    
+}
+
+ul li{
+    list-style: none;
+}
+
+h4{
+
+    padding-top: 160px;
+    text-align: center;
+
+}
+
+.figcaption {
+    position: absolute;
+    background-color: white;
+    opacity: 0.9;
+    height: 500px;
+    width: 320px;
+    border-radius: 20px;
+    top: 300px;
+    z-index: -1;
+    color: black;
+    margin-left: 50px;
+}
+
+
+h4, form{
+    font-family: Cantarell;
+    src: url(assets/fonts/Cantarell-Regular.ttf);
+    color: black;
+}
+
+.form-p {
+    font-size: 15px;
+    padding-left: 150px;
+    color: black;
+
+}
+
+strong {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFF;
+    opacity: 0.7;
+    border-radius: 120px;
+    width: 55%;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    opacity: 40%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 120px;
+}
+
+
+input {
+    border-radius: 38px;
+    height: 56px;
+    width: 520px;
+    margin: 5px;
+    padding: 5px 20px;
+    border: 1px solid black;
+    
+}
+
+textarea {
+    resize: none;
+    border-radius: 30px;
+    height: 186px;
+    width: 520px;
+    margin: 5px;
+    padding: 5px 20px;
+}
+
+button {
+    border-radius: 38px;
+    height: 54px;
+    width: 174px;
+    margin: 5px;
+    padding: 5px 20px;
+    background-color: #DF99F2;
+}
+
+button:hover{
+    color: #DF99F2;
+    box-shadow:#021740 30px 20px 80px;
+
+}
+
+.image-form {
+    position: relative;
+}
+
+label {
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+
+   
+
+
+/*FOOTER*/
+
+.avant-foot {
+    background: url(assets/images/all-pages/arrière_plan.png);
+    height: 200px;
+    position: relative;
+    top: -70px;
+}
+
+
+
+
+/*TOUS DROITS*/
+
+footer {
+    margin-top: -100px;
+    position: relative;
+    height: 500px;
+}
+
+.footer-li ul {
+    display: flex;
+}
+
+.footer-li li {
+    margin: 5px;
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.footer-li {
+    position: absolute;
+    top: 350px;
+    right: 150px;
+}
+
+/*PAGE*/
+
+.h-footer ul {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.h-footer li {
+    margin: 0px;
+    height: 30px;
+    width: 300px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.h-footer {
+    position: absolute;
+    top: 100px;
+    right: 4px;
+}
+
+.footer2 {
+    position: absolute;
+    left: 350px;
+    top: 240px;
+    z-index: +1;
+}
+
+.footer1 {
+    position: absolute;
+    left: 300px;
+    top: 142px;
+}
+
+.image-footer img:hover{
+    transform: scale(1.1) rotate(10deg);
+
+}
+
+.page h3, .retrouvez-nous h3 {
+    font-family: Cantarell;
+    src: url(assets/fonts/Cantarell-Regular.ttf);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 22px;
+    letter-spacing: 28%;
+}
+
+.page li {
+    font-family: Cantarell;
+    src: url(assets/fonts/Cantarell-Regular.ttf);
+    text-transform: capitalize;
+    font-size: 12px;
+    list-style: none;
+    margin-bottom: 5px;
+
+}
+
+.page {
+    position: absolute;
+    right: 555px;
+    top: 160px;
+}
+
+.retrouvez-nous {
+    position: absolute;
+    right: 145px;
+    top: 157px;
+}
+
+.fond-fotter {
+    opacity: 0.7;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width : 1100px) {
+    body{
+        width: 100%;
+    }
+    .grid{
+        width: 100%;
+    }
+    .container{
+        overflow: hidden;
+        width:100% ;
+    }
+    .image{
+        height: 100%;
+    }
+    .image-bar{
+        
+        width: 100%;
+    }
+}
+
+
