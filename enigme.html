@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Back Panther-enigme</title>
     <link rel="stylesheet" href="enigme.css">
+    <script src="./scripts/cdnjs/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -38,7 +39,7 @@
                     </div>
 
                     
-                        <img class="pt2" width="70%" src="./assets/Illustration-Logo/3Enigme/Pantherenigme2.png" alt="Pantherenigme2">
+                        <img class="pt2" width="80%" src="./assets/Illustration-Logo/3Enigme/Pantherenigme2.png" alt="Pantherenigme2">
                     
     
                     <div class="titre">
@@ -63,24 +64,26 @@
             <div id="corp-enigme">
             <div class="second">
 
-                <h2 class="titre-enigme" id="nombre-enigme">enigme numero <span class="numero">1</span></h2>
+                <h2 class="titre-enigme" id="number_enigme">enigme numero <span class="numero">1</span></h2>
                
                 <div class="content-enigme" >
 
-                <div>    
-                <p>
+                <div class="transcription">    
+                <p id="enonce">
                     Prouve ton talent d’espion et déchiffre cette réplique d’Okoyé écrite en Wakandais, 
                    <br> et apprend par la même occasion la première valeur d’ une Dora Milaje!
                 </p>
-                <h3>“ SI JE SUIS FIDELE C’EST <br> A CE TRONE 
-                    PEU IMPORTE <br> QUI MONTE DESSUS ”</h3>
+                <h3 id="enigme-text">
+                   <span class="panthera-letter"> “ SI JE SUIS FIDELE C’EST <br> A CE TRONE 
+                    PEU IMPORTE <br> QUI MONTE DESSUS ” </span>
+                </h3>
 
 
-                <form action="">
-                    <label for="">Alors, as tu la réponse?</label>
+                <form action="" id="enigme-form">
+                    <label for="reponse">Alors, as tu la réponse?</label>
                     <div class="flex">
-                        <input type="text" placeholder="Réponse">
-                        <button type="submit" onclick="openPopup()">Envoyer</button>
+                        <input type="text" id="reponse" placeholder="Réponse">
+                        <button type="submit">Envoyer</button>
                     </div>
 
                     
@@ -89,22 +92,36 @@
                 <!---popupbox-->
                 
                    
-                <div class="popup" id="popup">
+                <div class="popup" id="box-popup">
+                    <div id="titre_popup">
                     <h2>BRAVO !</h2>
                     <p>Tu as trouvé la réponse. Es tu prêt
                        <br> pour l’énigme suivante ?</p>
-                    <button type="submit" onclick="closePopup()">question suivante</button>
+                       <a id="btn-popup"> Revenir à l'accueil</a>
+                    </div>   
+                    <button type="submit" id="btn-popup">question suivante</button>
+                    <div class="chrono" id="chrono">
+                        <img src="./assets/Illustration-Logo/3Enigme/figma_logo.svg" alt="figma">
+                        <p>
+                            Coming soon <span id="hour">00:00:04</span>
+                        </p>
+                    </div>
                 </div>
             </form>
              </div>
 
-                <div class="paraph-a">
+                <div id="paraph-a" class="info-enigme">
 
-                    <img class="pt3" width="80%" src="./assets/Illustration-Logo/3Enigme/Pantherenigme2.png" alt="Pantherenigme2">
-                    
-                <p>Voici la transcription de l'alphabet</p>
+                    <img class="pt3" width="100%" src="./assets/Illustration-Logo/3Enigme/Pantherenigme2.png" alt="Pantherenigme2">
+                    <p>
+                        <span class="titre-info">Le savais tu ? </span>
+                        <p id="a_savoir">
+                            <span class="titre-transcription">Voici la transcription de l’alphabet :</span> <br>
+                         
+                       
                
-                <p class="transcription">
+                <p class="alphabet">
+                    </span class="alphabet">
                     a= <span>a</span> ;
                     b= <span>b</span> ;
                     c= <span>c</span> ;
@@ -131,6 +148,9 @@
                     x= <span>x</span> ;
                     y= <span>y</span> ;
                     z= <span>z</span> ;
+             </span>
+                </p> 
+                 </p>   
                 </p>
                    
                 </div>

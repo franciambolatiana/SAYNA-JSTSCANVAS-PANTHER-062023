@@ -126,9 +126,15 @@ h2 {
     position: relative;
 }
 
-.transcription {
+.alphabet {
     text-transform: uppercase;
     color: rgb(255, 255, 255);
+}
+
+.titre-transcription{
+    text-transform: none;
+    font-family: Cantarell;
+    src: url(assets/fonts/Cantarell-Regular.ttf);
 }
 
 span {
@@ -197,7 +203,7 @@ form {
     align-items: center;
 }
 
-.paraph-a {
+#paraph-a {
     position: absolute;
     top: 60px;
     right:-120px;
@@ -340,15 +346,3 @@ footer {
     transition: transform 0.4s, top 0.4s;
 }
 
-.open-popup{
-    visibility: visible;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(1);
-}
-
-.popup h2{
-    font-size: 15px;
-    font-family: Cantarell;
-    src: url(assets/fonts/Cantarell-Regular.ttf);
-    padding: 20px 0;
-}
